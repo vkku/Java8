@@ -6,7 +6,7 @@ Programs to demonstrate Java 8 functionalities
 * Date & Time
 * Functonal Interfaces
 
-#Java 7 vs Java 8
+# Java 7 vs Java 8
 
     Java 7 - Only Sequential execution of streams possible
 
