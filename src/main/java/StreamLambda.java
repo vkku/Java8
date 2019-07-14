@@ -21,18 +21,17 @@ public class StreamLambda {
   public static void main(String[] args) {
     StreamLambda streamLambda = new StreamLambda();
     System.out
-        .println(streamLambda.zap(Arrays.asList("java", "pascal", "c", "lisp", "cpp"), "java"));
-    StreamLambda lambda = new StreamLambda();
-    lambda.rxScan();
+    .println(streamLambda.zap(Arrays.asList("java", "pascal", "c", "lisp", "cpp"), "java"));
   }
 
-  String result = "";
+  private String result = "";
 
   @Test
   public void rxScan() {
     String[] letters = {"a", "b", "c"};
     Observable.fromArray(letters).scan(new StringBuilder(), StringBuilder::append)
-    .subscribe(total -> result += total.toString());
+        .subscribe(total -> result += total.toString());
+    System.out.println(result);
     assertTrue(result.equals("aababc"));
   }
 
