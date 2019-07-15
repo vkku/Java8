@@ -13,7 +13,8 @@ public class FunctionalInterfaces {
     System.out.println("Print even numbers:");
     eval(list, n -> n % 2 == 0);
     Predicate<Boolean> pred = iAmTheRebel(n -> true);
-    System.out.println(pred.test(true));
+    // System.out.println(pred.test(equals(false)));
+    System.out.println(iAmTheRebel(n -> true).test(false));
   }
 
   public static Predicate<Boolean> iAmTheRebel(Predicate<Boolean> whatYouSaid) {
