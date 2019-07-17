@@ -7,6 +7,8 @@ import org.junit.Test;
 
 public class FunctionalInterfaces {
   // Consumer, Supplier, Function and Predicate
+  // ToDo
+  // Supplier
   @Test
   public void predicateTest() {
     List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
