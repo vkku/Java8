@@ -17,10 +17,13 @@ public class Listt {
     // java.lang.UnsupportedOperationException
 
     List<String> branchedList =
-        ironHeadList.stream().flatMap(m -> m.stream()).distinct()
-            .collect(Collectors.toList());
+        ironHeadList.stream().flatMap(m -> m.stream()).map(s -> s)
+        .collect(Collectors.toList());
     branchedList.forEach(m -> {
       System.out.println(m);
     });
   }
+
 }
+// 11.56.42
+// 11.14.26
