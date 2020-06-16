@@ -4,7 +4,19 @@ Programs to demonstrate Java 8 functionalities
 * Methods
 * Lambda
 * Date & Time
-* Functonal Interfaces
+* Functional Interfaces
+
+#### First name comparator
+```Comparator<Employee> compareByFirstName = Comparator.comparing( Employee::getFirstName );```
+ 
+#### last name comparator
+```Comparator<Employee> compareByLastName = Comparator.comparing( Employee::getLastName );```
+ 
+#### Compare by first name and then last name (multiple fields)
+```Comparator<Employee> compareByFullName = compareByFirstName.thenComparing(compareByLastName);```
+ 
+#### Use Comparator
+```Collections.sort(employees, compareByFullName);```
 
 # Java 7 vs Java 8
 
