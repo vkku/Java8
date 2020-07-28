@@ -18,6 +18,8 @@ Programs to demonstrate Java 8 functionalities
 #### Use Comparator
 ```Collections.sort(employees, compareByFullName);```
 
+* Add Benchmark
+
 # Java 7 vs Java 8
 
     Java 7 - Only Sequential execution of streams possible
